@@ -1,0 +1,630 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E6086892-C4E8-4F2C-A62D-3EFE86148DF9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WordUp.My.MyApplication</StartupObject>
+    <RootNamespace>WordUp</RootNamespace>
+    <AssemblyName>WordUp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>WordUp Icon.ico</ApplicationIcon>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>0.03.127.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WordUp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WordUp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="WordUp.My" />
+    <Import Include="WordUp.My.Resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Find~Replace.Designer.vb">
+      <DependentUpon>Find~Replace.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Find~Replace.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.vb">
+      <DependentUpon>AboutForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="License.Designer.vb">
+      <DependentUpon>License.vb</DependentUpon>
+    </Compile>
+    <Compile Include="License.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RichTextBoxPrintCtrl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZoomDialog.Designer.vb">
+      <DependentUpon>ZoomDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ZoomDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Find~Replace.resx">
+      <DependentUpon>Find~Replace.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="License.resx">
+      <DependentUpon>License.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZoomDialog.resx">
+      <DependentUpon>ZoomDialog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BUILDING.txt" />
+    <Content Include="LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CHANGELOG.txt" />
+    <None Include="app.config" />
+    <None Include="Resources\accept.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\arrow_left.png" />
+    <None Include="Resources\arrow_redo.png" />
+    <None Include="Resources\arrow_refresh.png" />
+    <None Include="Resources\arrow_right.png" />
+    <None Include="Resources\arrow_undo.png" />
+    <None Include="Resources\asterisk_orange.png" />
+    <None Include="Resources\asterisk_yellow.png" />
+    <None Include="Resources\attach.png" />
+    <None Include="Resources\award_star_gold_3.png" />
+    <None Include="Resources\book.png" />
+    <None Include="Resources\book_addresses.png" />
+    <None Include="Resources\book_open.png" />
+    <None Include="Resources\brick.png" />
+    <None Include="Resources\bricks.png" />
+    <None Include="Resources\briefcase.png" />
+    <None Include="Resources\bug.png" />
+    <None Include="Resources\bullet_add.png" />
+    <None Include="Resources\bullet_arrow_bottom.png" />
+    <None Include="Resources\bullet_arrow_down.png" />
+    <None Include="Resources\bullet_arrow_top.png" />
+    <None Include="Resources\bullet_arrow_up.png" />
+    <None Include="Resources\bullet_black.png" />
+    <None Include="Resources\bullet_blue.png" />
+    <None Include="Resources\bullet_delete.png" />
+    <None Include="Resources\bullet_error.png" />
+    <None Include="Resources\bullet_green.png" />
+    <None Include="Resources\bullet_key.png" />
+    <None Include="Resources\bullet_orange.png" />
+    <None Include="Resources\bullet_picture.png" />
+    <None Include="Resources\bullet_pink.png" />
+    <None Include="Resources\bullet_purple.png" />
+    <None Include="Resources\bullet_red.png" />
+    <None Include="Resources\bullet_star.png" />
+    <None Include="Resources\bullet_toggle_minus.png" />
+    <None Include="Resources\bullet_toggle_plus.png" />
+    <None Include="Resources\bullet_white.png" />
+    <None Include="Resources\bullet_yellow.png" />
+    <None Include="Resources\calculator.png" />
+    <None Include="Resources\camera.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\chart_bar.png" />
+    <None Include="Resources\chart_bar_add.png" />
+    <None Include="Resources\chart_bar_delete.png" />
+    <None Include="Resources\chart_bar_edit.png" />
+    <None Include="Resources\chart_bar_error.png" />
+    <None Include="Resources\chart_bar_link.png" />
+    <None Include="Resources\chart_curve.png" />
+    <None Include="Resources\chart_curve_add.png" />
+    <None Include="Resources\chart_curve_delete.png" />
+    <None Include="Resources\chart_curve_edit.png" />
+    <None Include="Resources\chart_curve_error.png" />
+    <None Include="Resources\chart_curve_go.png" />
+    <None Include="Resources\chart_curve_link.png" />
+    <None Include="Resources\chart_line.png" />
+    <None Include="Resources\chart_line_add.png" />
+    <None Include="Resources\chart_line_delete.png" />
+    <None Include="Resources\chart_line_edit.png" />
+    <None Include="Resources\chart_line_error.png" />
+    <None Include="Resources\chart_line_link.png" />
+    <None Include="Resources\chart_organisation.png" />
+    <None Include="Resources\chart_organisation_add.png" />
+    <None Include="Resources\chart_organisation_delete.png" />
+    <None Include="Resources\chart_pie.png" />
+    <None Include="Resources\chart_pie_add.png" />
+    <None Include="Resources\chart_pie_delete.png" />
+    <None Include="Resources\chart_pie_edit.png" />
+    <None Include="Resources\chart_pie_error.png" />
+    <None Include="Resources\chart_pie_link.png" />
+    <None Include="Resources\clock.png" />
+    <None Include="Resources\clock_add.png" />
+    <None Include="Resources\clock_delete.png" />
+    <None Include="Resources\clock_edit.png" />
+    <None Include="Resources\clock_error.png" />
+    <None Include="Resources\clock_go.png" />
+    <None Include="Resources\clock_link.png" />
+    <None Include="Resources\clock_pause.png" />
+    <None Include="Resources\clock_play.png" />
+    <None Include="Resources\clock_red.png" />
+    <None Include="Resources\clock_stop.png" />
+    <None Include="Resources\cog.png" />
+    <None Include="Resources\color_swatch.png" />
+    <None Include="Resources\color_wheel.png" />
+    <None Include="Resources\comment.png" />
+    <None Include="Resources\compress.png" />
+    <None Include="Resources\computer.png" />
+    <None Include="Resources\connect.png" />
+    <None Include="Resources\contrast.png" />
+    <None Include="Resources\cross.png" />
+    <None Include="Resources\cup.png" />
+    <None Include="Resources\cursor.png" />
+    <None Include="Resources\cut.png" />
+    <None Include="Resources\date.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\disconnect.png" />
+    <None Include="Resources\disk.png" />
+    <None Include="Resources\disk_multiple.png" />
+    <None Include="Resources\door.png" />
+    <None Include="Resources\email.png" />
+    <None Include="Resources\email_link.png" />
+    <None Include="Resources\emoticon_evilgrin.png" />
+    <None Include="Resources\emoticon_grin.png" />
+    <None Include="Resources\emoticon_happy.png" />
+    <None Include="Resources\emoticon_smile.png" />
+    <None Include="Resources\emoticon_surprised.png" />
+    <None Include="Resources\emoticon_tongue.png" />
+    <None Include="Resources\emoticon_unhappy.png" />
+    <None Include="Resources\emoticon_waii.png" />
+    <None Include="Resources\emoticon_wink.png" />
+    <None Include="Resources\error.png" />
+    <None Include="Resources\exclamation.png" />
+    <None Include="Resources\eye.png" />
+    <None Include="Resources\feed.png" />
+    <None Include="Resources\film.png" />
+    <None Include="Resources\film_add.png" />
+    <None Include="Resources\find.png" />
+    <None Include="Resources\find_again.png" />
+    <None Include="Resources\flag_blue.png" />
+    <None Include="Resources\flag_green.png" />
+    <None Include="Resources\flag_orange.png" />
+    <None Include="Resources\flag_pink.png" />
+    <None Include="Resources\flag_purple.png" />
+    <None Include="Resources\flag_red.png" />
+    <None Include="Resources\flag_yellow.png" />
+    <None Include="Resources\folder.png" />
+    <None Include="Resources\folder_add.png" />
+    <None Include="Resources\font.png" />
+    <None Include="Resources\font_add.png" />
+    <None Include="Resources\font_delete.png" />
+    <None Include="Resources\group.png" />
+    <None Include="Resources\group_add.png" />
+    <None Include="Resources\heart.png" />
+    <None Include="Resources\hourglass.png" />
+    <None Include="Resources\house.png" />
+    <None Include="Resources\house_go.png" />
+    <None Include="Resources\house_link.png" />
+    <None Include="Resources\html.png" />
+    <None Include="Resources\image.png" />
+    <None Include="Resources\image_add.png" />
+    <None Include="Resources\image_edit.png" />
+    <None Include="Resources\image_link.png" />
+    <None Include="Resources\images.png" />
+    <None Include="Resources\information.png" />
+    <None Include="Resources\layers.png" />
+    <None Include="Resources\layout.png" />
+    <None Include="Resources\lightbulb.png" />
+    <None Include="Resources\lightning.png" />
+    <None Include="Resources\link.png" />
+    <None Include="Resources\link_add.png" />
+    <None Include="Resources\link_go.png" />
+    <None Include="Resources\lock.png" />
+    <None Include="Resources\lock_add.png" />
+    <None Include="Resources\lock_open.png" />
+    <None Include="Resources\medal_bronze_3.png" />
+    <None Include="Resources\medal_gold_3.png" />
+    <None Include="Resources\medal_silver_3.png" />
+    <None Include="Resources\money.png" />
+    <None Include="Resources\money_dollar.png" />
+    <None Include="Resources\money_euro.png" />
+    <None Include="Resources\money_pound.png" />
+    <None Include="Resources\money_yen.png" />
+    <None Include="Resources\monitor.png" />
+    <None Include="Resources\music.png" />
+    <None Include="Resources\new.png" />
+    <None Include="Resources\newspaper.png" />
+    <None Include="Resources\page.png" />
+    <None Include="Resources\page_add.png" />
+    <None Include="Resources\page_attach.png" />
+    <None Include="Resources\page_code.png" />
+    <None Include="Resources\page_copy.png" />
+    <None Include="Resources\page_delete.png" />
+    <None Include="Resources\page_edit.png" />
+    <None Include="Resources\page_error.png" />
+    <None Include="Resources\page_excel.png" />
+    <None Include="Resources\page_find.png" />
+    <None Include="Resources\page_gear.png" />
+    <None Include="Resources\page_go.png" />
+    <None Include="Resources\page_green.png" />
+    <None Include="Resources\page_key.png" />
+    <None Include="Resources\page_lightning.png" />
+    <None Include="Resources\page_link.png" />
+    <None Include="Resources\page_paintbrush.png" />
+    <None Include="Resources\page_paste.png" />
+    <None Include="Resources\page_red.png" />
+    <None Include="Resources\page_refresh.png" />
+    <None Include="Resources\page_save.png" />
+    <None Include="Resources\page_white.png" />
+    <None Include="Resources\page_white_acrobat.png" />
+    <None Include="Resources\page_white_actionscript.png" />
+    <None Include="Resources\page_white_add.png" />
+    <None Include="Resources\page_white_c.png" />
+    <None Include="Resources\page_white_camera.png" />
+    <None Include="Resources\page_white_cd.png" />
+    <None Include="Resources\page_white_code.png" />
+    <None Include="Resources\page_white_code_red.png" />
+    <None Include="Resources\page_white_coldfusion.png" />
+    <None Include="Resources\page_white_compressed.png" />
+    <None Include="Resources\page_white_copy.png" />
+    <None Include="Resources\page_white_cplusplus.png" />
+    <None Include="Resources\page_white_csharp.png" />
+    <None Include="Resources\page_white_cup.png" />
+    <None Include="Resources\page_white_database.png" />
+    <None Include="Resources\page_white_delete.png" />
+    <None Include="Resources\page_white_dvd.png" />
+    <None Include="Resources\page_white_edit.png" />
+    <None Include="Resources\page_white_error.png" />
+    <None Include="Resources\page_white_excel.png" />
+    <None Include="Resources\page_white_find.png" />
+    <None Include="Resources\page_white_flash.png" />
+    <None Include="Resources\page_white_freehand.png" />
+    <None Include="Resources\page_white_gear.png" />
+    <None Include="Resources\page_white_get.png" />
+    <None Include="Resources\page_white_go.png" />
+    <None Include="Resources\page_white_h.png" />
+    <None Include="Resources\page_white_horizontal.png" />
+    <None Include="Resources\page_white_key.png" />
+    <None Include="Resources\page_white_lightning.png" />
+    <None Include="Resources\page_white_link.png" />
+    <None Include="Resources\page_white_magnify.png" />
+    <None Include="Resources\page_white_medal.png" />
+    <None Include="Resources\page_white_office.png" />
+    <None Include="Resources\page_white_paint.png" />
+    <None Include="Resources\page_white_paintbrush.png" />
+    <None Include="Resources\page_white_paste.png" />
+    <None Include="Resources\page_white_php.png" />
+    <None Include="Resources\page_white_picture.png" />
+    <None Include="Resources\page_white_powerpoint.png" />
+    <None Include="Resources\page_white_put.png" />
+    <None Include="Resources\page_white_ruby.png" />
+    <None Include="Resources\page_white_stack.png" />
+    <None Include="Resources\page_white_star.png" />
+    <None Include="Resources\page_white_swoosh.png" />
+    <None Include="Resources\page_white_text.png" />
+    <None Include="Resources\page_white_text_width.png" />
+    <None Include="Resources\page_white_tux.png" />
+    <None Include="Resources\page_white_vector.png" />
+    <None Include="Resources\page_white_visualstudio.png" />
+    <None Include="Resources\page_white_width.png" />
+    <None Include="Resources\page_white_word.png" />
+    <None Include="Resources\page_white_world.png" />
+    <None Include="Resources\page_white_wrench.png" />
+    <None Include="Resources\page_white_zip.png" />
+    <None Include="Resources\page_word.png" />
+    <None Include="Resources\page_world.png" />
+    <None Include="Resources\paintbrush.png" />
+    <None Include="Resources\paintcan.png" />
+    <None Include="Resources\palette.png" />
+    <None Include="Resources\paste_plain.png" />
+    <None Include="Resources\paste_word.png" />
+    <None Include="Resources\pencil.png" />
+    <None Include="Resources\photo.png" />
+    <None Include="Resources\photo_add.png" />
+    <None Include="Resources\pictures.png" />
+    <None Include="Resources\pilcrow.png" />
+    <None Include="Resources\plugin.png" />
+    <None Include="Resources\plugin_add.png" />
+    <None Include="Resources\printer.png" />
+    <None Include="Resources\printer_add.png" />
+    <None Include="Resources\printer_delete.png" />
+    <None Include="Resources\printer_empty.png" />
+    <None Include="Resources\printer_error.png" />
+    <None Include="Resources\rainbow.png" />
+    <None Include="Resources\report.png" />
+    <None Include="Resources\report_add.png" />
+    <None Include="Resources\rosette.png" />
+    <None Include="Resources\script.png" />
+    <None Include="Resources\script_add.png" />
+    <None Include="Resources\shading.png" />
+    <None Include="Resources\shape_align_bottom.png" />
+    <None Include="Resources\shape_align_center.png" />
+    <None Include="Resources\shape_align_left.png" />
+    <None Include="Resources\shape_align_middle.png" />
+    <None Include="Resources\shape_align_right.png" />
+    <None Include="Resources\shape_align_top.png" />
+    <None Include="Resources\shape_flip_horizontal.png" />
+    <None Include="Resources\shape_flip_vertical.png" />
+    <None Include="Resources\shape_group.png" />
+    <None Include="Resources\shape_handles.png" />
+    <None Include="Resources\shape_move_back.png" />
+    <None Include="Resources\shape_move_backwards.png" />
+    <None Include="Resources\shape_move_forwards.png" />
+    <None Include="Resources\shape_move_front.png" />
+    <None Include="Resources\shape_rotate_anticlockwise.png" />
+    <None Include="Resources\shape_rotate_clockwise.png" />
+    <None Include="Resources\shape_square.png" />
+    <None Include="Resources\shape_square_add.png" />
+    <None Include="Resources\shape_square_delete.png" />
+    <None Include="Resources\shape_square_edit.png" />
+    <None Include="Resources\shape_square_error.png" />
+    <None Include="Resources\shape_square_go.png" />
+    <None Include="Resources\shape_square_key.png" />
+    <None Include="Resources\shape_square_link.png" />
+    <None Include="Resources\shape_ungroup.png" />
+    <None Include="Resources\shield.png" />
+    <None Include="Resources\sitemap.png" />
+    <None Include="Resources\sitemap_color.png" />
+    <None Include="Resources\sound.png" />
+    <None Include="Resources\spellcheck.png" />
+    <None Include="Resources\star.png" />
+    <None Include="Resources\status_online.png" />
+    <None Include="Resources\stop.png" />
+    <None Include="Resources\style.png" />
+    <None Include="Resources\style_add.png" />
+    <None Include="Resources\style_delete.png" />
+    <None Include="Resources\style_edit.png" />
+    <None Include="Resources\style_go.png" />
+    <None Include="Resources\sum.png" />
+    <None Include="Resources\tab.png" />
+    <None Include="Resources\table.png" />
+    <None Include="Resources\table_add.png" />
+    <None Include="Resources\table_delete.png" />
+    <None Include="Resources\table_edit.png" />
+    <None Include="Resources\table_error.png" />
+    <None Include="Resources\table_gear.png" />
+    <None Include="Resources\table_go.png" />
+    <None Include="Resources\tag.png" />
+    <None Include="Resources\tag_blue.png" />
+    <None Include="Resources\tag_blue_add.png" />
+    <None Include="Resources\tag_blue_delete.png" />
+    <None Include="Resources\text_align_center.png" />
+    <None Include="Resources\text_align_justify.png" />
+    <None Include="Resources\text_align_left.png" />
+    <None Include="Resources\text_align_right.png" />
+    <None Include="Resources\text_allcaps.png" />
+    <None Include="Resources\text_bold.png" />
+    <None Include="Resources\text_columns.png" />
+    <None Include="Resources\text_dropcaps.png" />
+    <None Include="Resources\text_heading_1.png" />
+    <None Include="Resources\text_heading_2.png" />
+    <None Include="Resources\text_heading_3.png" />
+    <None Include="Resources\text_heading_4.png" />
+    <None Include="Resources\text_heading_5.png" />
+    <None Include="Resources\text_heading_6.png" />
+    <None Include="Resources\text_horizontalrule.png" />
+    <None Include="Resources\text_indent.png" />
+    <None Include="Resources\text_indent_remove.png" />
+    <None Include="Resources\text_italic.png" />
+    <None Include="Resources\text_kerning.png" />
+    <None Include="Resources\text_letter_omega.png" />
+    <None Include="Resources\text_letterspacing.png" />
+    <None Include="Resources\text_linespacing.png" />
+    <None Include="Resources\text_list_bullets.png" />
+    <None Include="Resources\text_list_numbers.png" />
+    <None Include="Resources\text_lowercase.png" />
+    <None Include="Resources\text_padding_bottom.png" />
+    <None Include="Resources\text_padding_left.png" />
+    <None Include="Resources\text_padding_right.png" />
+    <None Include="Resources\text_padding_top.png" />
+    <None Include="Resources\text_replace.png" />
+    <None Include="Resources\text_signature.png" />
+    <None Include="Resources\text_smallcaps.png" />
+    <None Include="Resources\text_strikethrough.png" />
+    <None Include="Resources\text_subscript.png" />
+    <None Include="Resources\text_superscript.png" />
+    <None Include="Resources\text_underline.png" />
+    <None Include="Resources\text_uppercase.png" />
+    <None Include="Resources\textfield.png" />
+    <None Include="Resources\textfield_add.png" />
+    <None Include="Resources\tick.png" />
+    <None Include="Resources\time.png" />
+    <None Include="Resources\time_add.png" />
+    <None Include="Resources\timeline_marker.png" />
+    <None Include="Resources\transmit.png" />
+    <None Include="Resources\tux.png" />
+    <None Include="Resources\vcard.png" />
+    <None Include="Resources\vcard_add.png" />
+    <None Include="Resources\vector.png" />
+    <None Include="Resources\vector_add.png" />
+    <None Include="Resources\wand.png" />
+    <None Include="Resources\weather_sun.png" />
+    <None Include="Resources\world_add.png" />
+    <None Include="Resources\world_delete.png" />
+    <None Include="Resources\world_edit.png" />
+    <None Include="Resources\world_go.png" />
+    <None Include="Resources\world_link.png" />
+    <None Include="Resources\wrench.png" />
+    <None Include="Resources\wrench_orange.png" />
+    <None Include="Resources\xhtml.png" />
+    <None Include="Resources\zoom.png" />
+    <None Include="Resources\zoom_in.png" />
+    <None Include="Resources\zoom_out.png" />
+    <None Include="Resources\textfield_rename.png" />
+    <None Include="Resources\plugin_edit.png" />
+    <None Include="Resources\help.png" />
+    <None Include="Resources\user_comment.png" />
+    <None Include="Resources\arrow_in.png" />
+    <None Include="Resources\shape_square_go1.png" />
+    <None Include="Resources\shading1.png" />
+    <None Include="Resources\layout_header.png" />
+    <Content Include="WordUp Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
